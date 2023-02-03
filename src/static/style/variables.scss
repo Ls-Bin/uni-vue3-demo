@@ -1,0 +1,151 @@
+// 表单输入时样式
+input, .input {
+	color: #333333; // 输入时文字色
+	caret-color: #FF9700;// 输入时光标颜色
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shu{
+  color: #E3E3E3;
+  opacity: 0.4;
+  margin: 0 20rpx;
+}
+
+.container{
+  padding: 32rpx;
+}
+
+.handle{
+  height: 92rpx;
+  margin-bottom: 2rpx;
+}
+.handle .btn{
+  color: #FFFFFF;
+  background: #2874FF;
+  border-radius: 46rpx;
+}
+
+// 表单重置
+.common-form .uni-forms-item{
+  margin-top: 20rpx;
+  padding: 20rpx 20rpx 0 rpx 20rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.common-form .uni-forms-item input{
+  height: 72rpx;
+  // text-align: right;
+}
+.common-form .uni-forms-item .uni-error-message{
+  // right: 0px;
+  left: unset;
+}
+.common-form .uni-forms-item .uni-error-message .uni-error-message-text{
+	color: #FF402E!important;
+}
+.common-form .uni-forms-item .label-text{
+  font-weight: 400;
+  color: #181818;
+  font-size: 32rpx !important;
+}
+.common-form .uni-forms-item .uni-forms-item__label{
+  width: 300rpx !important;
+}
+.common-form .label-auto  .uni-forms-item .uni-forms-item__label{
+  width: auto !important;
+}
+.common-form .uni-forms-item .uni-forms-item__inner{
+  padding-bottom: 36rpx;
+}
+.common-form .picker-box{
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+  justify-content: flex-end;
+}
+.no-line .uni-forms-item{
+    border-bottom: none;
+}
+.h-radio{
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.h-radio-item{
+  margin-left: 20rpx;
+}
+.label-auto-text{
+  margin-bottom: 40rpx;
+}
+.v-radio{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40rpx;
+}
+.v-radio-item{
+  margin-bottom: 20rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: #2874FF!important;
+  background-color: #2874FF!important;
+}
+.picker-box .sel{
+  display: flex;
+  align-items: center;
+  color: #ACACAC;
+}
+.picker-box .allow{
+  width: 16rpx;
+  max-height: 24rpx;
+  margin-left: 10rpx;
+}
+.picker-box .sel .has{
+	color: #181818;
+}
+
+/* 防文字溢出*/
+[class*='line-clamp']{ text-overflow:ellipsis; overflow: hidden; }
+.line-clamp1{ display: inline-block; width: 100%; white-space: nowrap; }/* 作用：限制只显示1行,超出部分以...显示,备注:不能用-webkit-line-clamp:1(因为这样当出现...时行距会发生变化) */
+.line-clamp2{ display: -webkit-inline-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word; word-break:break-all; }/* 作用：限制只显示2行,超出部分以...显示*/
+.line-clamp3{ display: -webkit-inline-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; word-break:break-all; }/* 作用：限制只显示3行,超出部分以...显示*/
+.line-clamp4{ display: -webkit-inline-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; word-wrap:break-word; word-break:break-all; }/* 限制只显示4行,超出部分以...显示 */
+.line-clamp5{ display: -webkit-inline-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; word-wrap:break-word; word-break:break-all; }/* 限制只显示5行,超出部分以...显示 */
+
+button::after {
+	border: 0rpx solid!important;
+}
+.primary-btn{
+	font-size: 37rpx;
+	color: #FFFFFF;
+	border-radius: 48rpx;
+	height: 96rpx;
+	background: linear-gradient(90deg, #FEC560 0%, #FFA12D 100%);
+}
+.defalut-btn{
+	height: 96rpx;
+	border: 2rpx solid #FF9700;
+	border-radius: 48rpx;
+	color: #FF9700;
+	font-size: 34rpx;
+	background-color: #FFFFFF;
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+	border-color: #FF9700 !important;
+	background: #FF9700 !important;
+}
+
+.modal-box .u-model__footer__button{
+	height: auto !important;
+}
+.modal-box .u-model__content__message{
+	font-size: 32rpx;
+	font-weight: 400;
+	color: #232325;
+}
